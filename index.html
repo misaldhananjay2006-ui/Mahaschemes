@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maharashtra Student Scheme Checker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header class="header">
+      <h1>Maharashtra Student Scheme Checker</h1>
+      <p>Free eligibility check • No login • No Aadhaar required</p>
+    </header>
+
+    <section class="card">
+      <form id="eligibilityForm">
+
+        <div class="form-group">
+          <label>Age</label>
+          <input type="number" id="age" required>
+        </div>
+
+        <div class="form-group">
+          <label>Category</label>
+          <select id="category">
+            <option value="open">OPEN</option>
+            <option value="obc">OBC</option>
+            <option value="sc">SC</option>
+            <option value="st">ST</option>
+            <option value="vjnt">VJNT</option>
+            <option value="minority">Minority</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Annual Family Income (₹)</label>
+          <input type="number" id="income" required>
+        </div>
+
+        <div class="form-group">
+          <label>Education Level</label>
+          <select id="education">
+            <option value="12">12th</option>
+            <option value="diploma">Diploma</option>
+            <option value="degree">Degree</option>
+            <option value="pg">Postgraduate</option>
+          </select>
+        </div>
+
+        <button type="submit">Check Eligibility</button>
+
+      </form>
+    </section>
+
+    <section id="results" class="results"></section>
+  <div id="paidBox" class="paid hidden">
+  <h3>Apply-Ready Checklist (₹49)</h3>
+  <p>Pay ₹49 via UPI and submit details below.</p>
+  <div class="admin-tools">
+  <button onclick="chatOnWhatsApp()">Chat on WhatsApp</button>
+</div>
+
+  <img src="upi-qr.png" alt="UPI QR" style="width:200px;margin:10px auto;display:block;">
+
+  <form id="upiForm">
+    <input type="text" id="utr" placeholder="Enter UPI Transaction ID (UTR)" required>
+  <input type="text" id="name" placeholder="Your Name" required>
+<input type="tel" id="whatsapp" placeholder="WhatsApp Number (10 digits)" required>
+    <button type="submit">I Have Paid</button>
+  </form>
+
+  <p style="font-size:12px;margin-top:8px;">
+    Access will be unlocked after verification.
+  </p>
+</div>
+
+    <footer class="footer">
+      <p>Disclaimer: This tool provides guidance only. Final approval depends on official authorities.</p>
+    </footer>
+
+  </div>
+
+  <script src="schemes.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
