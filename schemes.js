@@ -1,5 +1,5 @@
 const SCHEMES = [
-  {
+  { 
     name: "Government of India Post Matric Scholarship (SC)",
     categories: ["sc"],
     incomeMax: 250000,
